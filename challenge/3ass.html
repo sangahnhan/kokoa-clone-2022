@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Assignment Day 3</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Create An Account</h1>
+		<form>
+			<label for="first-name">First name</label>
+			<input
+				required
+				id="first-name"
+				class="border"
+				placeholder="First name"
+			/><br />
+
+			<label for="last-name">Last name</label>
+			<input
+				required
+				id="last-name"
+				class="border"
+				placeholder="Last name"
+			/><br />
+
+			<label for="email">Email</label>
+			<input
+				required
+				id="email"
+				class="border"
+				type="email"
+				placeholder="Email"
+			/><br />
+
+			<label for="username">Username</label>
+			<input
+				required
+				id="username"
+				class="border"
+				placeholder="Username"
+			/><br />
+
+			<label for="password">Password</label>
+			<input
+				required
+				id="password"
+				class="border"
+				type="password"
+				minlength="10"
+				placeholder="Password"
+			/><br />
+
+			<label for="birth-day">Birth date</label>
+			<input required id="birth-day" class="border" type="date" /><br />
+
+			<label for="happiness">How happy are you?</label>
+			<input
+				required
+				id="happiness"
+				type="range"
+				min="0"
+				max="10"
+				list="marks"
+			/><br />
+			<datalist id="marks">
+				<option value="0"></option>
+				<option value="1"></option>
+				<option value="2"></option>
+				<option value="3"></option>
+				<option value="4"></option>
+				<option value="5"></option>
+				<option value="6"></option>
+				<option value="7"></option>
+				<option value="8"></option>
+				<option value="9"></option>
+				<option value="10"></option>
+			</datalist>
+			<!-- ToDo : option을 range바 밑으로 내리기 -->
+			<!-- ToDo : range바 채우기 -->
+
+			<label for="fav-color">What is your fav. color?</label>
+			<input required id="fav-color" class="border" type="color" /><br />
+
+			<input type="submit" class="border" value="Create Account" />
+		</form>
+	</body>
+</html>

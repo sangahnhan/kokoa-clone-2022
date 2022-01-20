@@ -1,3 +1,6 @@
 :root {
 	--yellow: rgb(230, 216, 21);
 }
+:indent {
+	--indent: 25px;
+}
